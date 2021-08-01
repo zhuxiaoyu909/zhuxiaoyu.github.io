@@ -1,0 +1,111 @@
+.line {
+    fill: none;
+    stroke: #FFB71A;
+    stroke-width: 1;
+    clip-path: url(#clip);
+}
+
+svg {
+    font: 10px sans-serif;
+}
+
+.zoom {
+    cursor: move;
+    fill: none;
+    pointer-events: all;
+}
+
+.brush rect.selection {
+    stroke: #fff;
+    fill: #cc8b00;
+    fill-opacity: 0.125;
+    shape-rendering: crispEdges;
+}
+
+.grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.6;
+    stroke-width: 0.5;
+    shape-rendering: crispEdges;
+}
+
+.grid path {
+    stroke-width: 0;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #999999;
+    shape-rendering: crispEdges;
+}
+
+
+.y.axis .tick text {
+    text-anchor: start !important;
+    fill: #7f8faf;
+}
+
+.y.axis .tick line {
+    display: none;
+}
+
+.y.axis path {
+    display: none;
+}
+
+.focus text {
+    font: 12px sans-serif;
+    fill: #595959;
+}
+
+.focus__axis--context text {
+    font: 12px sans-serif;
+    fill: #595959;
+}
+
+.focus__axis--context .tick:nth-child(odd) {
+    display: none;
+}
+
+.focus__axis--context path,
+.focus__axis--context line {
+    display: none;
+}
+
+.focus__area {
+    fill: #e6f6fe;
+    stroke: #3587bc;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+
+.myButton {
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+    background-color: #ededed;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #777777;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+
+    .myButton:hover {
+        background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+        background-color: #dfdfdf;
+    }
+
+    .myButton:active {
+        position: relative;
+        top: 1px;
+    }
